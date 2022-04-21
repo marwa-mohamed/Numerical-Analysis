@@ -1,14 +1,2 @@
-﻿  Iterative-methods.cpp
-  Numerical Analysis.cpp
-  Generating Code...
-Iterative-methods.obj : error LNK2001: unresolved external symbol "public: static int Iterative::number_of_equations" (?number_of_equations@Iterative@@2HA)
-Numerical Analysis.obj : error LNK2001: unresolved external symbol "public: static int Iterative::number_of_equations" (?number_of_equations@Iterative@@2HA)
-Iterative-methods.obj : error LNK2001: unresolved external symbol "public: static int Iterative::num_of_iterations" (?num_of_iterations@Iterative@@2HA)
-Numerical Analysis.obj : error LNK2001: unresolved external symbol "public: static int Iterative::num_of_iterations" (?num_of_iterations@Iterative@@2HA)
-Iterative-methods.obj : error LNK2001: unresolved external symbol "public: static double * Iterative::iterations" (?iterations@Iterative@@2PANA)
-Iterative-methods.obj : error LNK2001: unresolved external symbol "public: static double * Iterative::intial_values" (?intial_values@Iterative@@2PANA)
-Numerical Analysis.obj : error LNK2001: unresolved external symbol "public: static double * Iterative::intial_values" (?intial_values@Iterative@@2PANA)
-Iterative-methods.obj : error LNK2001: unresolved external symbol "public: static double * Iterative::constants" (?constants@Iterative@@2PANA)
-Numerical Analysis.obj : error LNK2001: unresolved external symbol "public: static double * Iterative::constants" (?constants@Iterative@@2PANA)
-Iterative-methods.obj : error LNK2001: unresolved external symbol "public: static double (* Iterative::coefficients)[1]" (?coefficients@Iterative@@2PAY00NA)
-C:\Users\mk225\Desktop\Numerical\Numerical-Analysis\Debug\Numerical Analysis.exe : fatal error LNK1120: 6 unresolved externals
+﻿  Numerical Analysis.cpp
+  Numerical Analysis.vcxproj -> C:\Users\mk225\Desktop\Numerical\Numerical-Analysis\Debug\Numerical Analysis.exe
