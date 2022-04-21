@@ -143,6 +143,7 @@
     <ClCompile Include="Numerical Analysis.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="global.h" />
     <ClInclude Include="Iterative-methods.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
