@@ -1,33 +1,9 @@
 
 #include <iostream>
 #include <iomanip>
+#include "Iterative-methods.h"
 
-class global_variables {
-public :
-     int number_of_equations;
-     int num_of_iterations;
-     double* iterations = new double[number_of_equations];
-     double* intial_values = new double[number_of_equations];
-     double* constants = new double[number_of_equations];
-     double** coefficients = new double* [number_of_equations];
 
-     void Seidal() {
-         while (num_of_iterations > 0)
-         {
-             for (int i = 0;i < number_of_equations;i++) {
-                 iterations[i] = (constants[i] / coefficients[i][i]);
-                 for (int j = 0;j < number_of_equations;j++) {
-                     if (i == j)
-                         continue;
-                     iterations[i] = iterations[i] - ((coefficients[i][j] / coefficients[i][i]) * intial_values[j]);
-                     intial_values[i] = iterations[i];
-                 }
-             }
-             num_of_iterations--;
-
-         }
-     }
-};
 
 using namespace std;
 
@@ -72,15 +48,13 @@ int main()
     //Alogrithm : 
     cout << "Choose method : " << endl;
     cout << "[1] Gauss-Seidal ." << endl;
-    cin >> choice;
-    switch (choice)
-    {
-    case 1 : 
-        user.Seidal();
-    }
- 
+    
+     user.Seidal();
+   
+  
     for (int i = 0;i < user.number_of_equations;i++)
         cout << user.intial_values[i] << " ";
+        
 
     return 0;
 

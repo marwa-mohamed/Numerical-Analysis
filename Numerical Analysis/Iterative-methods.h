@@ -1,20 +1,17 @@
-#pragma once
+
 #ifndef GLOBAL_H
 #define GLOBAL_H
-class Iterative {
+class global_variables {
 public:
-	static int number_of_equations;
-	static int num_of_iterations;
-	static double iterations[];
-	static double intial_values[];
-	static double constants[];
-	static double coefficients[][1];
+    int number_of_equations;
+    int num_of_iterations;
+    double* iterations = new double[number_of_equations];
+    double* intial_values = new double[number_of_equations];
+    double* constants = new double[number_of_equations];
+    double** coefficients = new double* [number_of_equations];
 
-
-
-	static void Seidal();
-
-
+    void Seidal();
+    
 };
 
 #endif 
