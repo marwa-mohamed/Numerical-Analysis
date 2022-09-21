@@ -17,3 +17,6 @@ void global_variables::Seidal() {
     }
 }
 
+// Hello !
+// 1234567890
+
